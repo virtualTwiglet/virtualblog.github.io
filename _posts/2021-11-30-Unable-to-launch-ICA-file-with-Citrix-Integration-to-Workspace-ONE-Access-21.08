@@ -4,13 +4,13 @@ title: Unable to launch ICA file with Citrix Integration to Workspace ONE Access
 ---
 I was brought in to assist and troubleshoot for a customer who was experiencing issues whilst integrating Citrix with their Workspace ONE Access environment. When ever they tried to launch a Citrix App via the portal it would fail with the following message.
 <img src="{{ site.baseurl }}/images/WS1-ICA-Request.jpg">
->
+>_
 Investigating the issue from the Workspace ONE Access dashboard reports page under resource usage. I could see that it was failing to launch the ICA file due to communication errors between the Workspace ONE Access Connector and the Citrix StoreFront Server.
 <img src="{{ site.baseurl }}/images/WS1-ICA-Request-Failed.jpg">
->
+>_
 Everything from the Workspace ONE admin console and the Connector install was configured correctly as we could at least display the Citrix Virtual Apps on the user portal and attempt to launch them. So this would seem to suggest that something had been overlooked during the configuration between the Connector and StoreFront during the initial installation. It had to be something small as everything else was correctly configured.
 Now something I had read about previously was nagging in the back of my mind with regards to the Trusted Domains configuration in Citrix. 
->
+>_
 We needed to launch the management console to check the configuration for Trusted Domains.
 Select Stores in the left pane of the Citrix StoreFront management console, and in the Actions pane, click Manage Authentication Methods. Click the drop down box and select Configure Trusted Domains.
 <img src="{{ site.baseurl }}/images/WS1-ICA-TrustedDomain.jpg">
