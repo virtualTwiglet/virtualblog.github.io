@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 During my 30 years of experience working in the IT sector, I have worked in the areas of operations, delivery, consultancy and architecture roles. 
-These roles of be in various industry sectors i.e Finance, Retail, Security, etc.
+These roles have been in various industry sectors i.e Finance, Retail, Security, etc.
 I have now specialised in EUC for the last ten years working for Partners and VMware's Professional Services.
 
 ### Certifications
