@@ -14,7 +14,7 @@ Now something I had read about previously was nagging in the back of my mind wit
 We needed to launch the management console to check the configuration for Trusted Domains.
 Select Stores in the left pane of the Citrix StoreFront management console, and in the Actions pane, click Manage Authentication Methods. Click the drop down box and select Configure Trusted Domains.
 <img src="{{ site.baseurl }}/images/WS1-ICA-TrustedDomain.jpg">
-
+<br>
 It was here that it was confirmed that the customer had only entered the NETBIOS name for the Trusted Domain. This I believed was the issue so we need ed to update the Trusted Domains to include the FQDN.
 Enter the appropriate FQDN in the Trusted Domains field for the installation. It is important to remember here that although it is still acceptable to use the NETBIOS name it won't be recognised when using the 21.08 Access Connector. It is important to set the default Trusted Domain as the full FQDN of the environment.
 <img src="{{ site.baseurl }}/images/WS1-ICA-TrustedDomain-Config.jpg"> <br>
