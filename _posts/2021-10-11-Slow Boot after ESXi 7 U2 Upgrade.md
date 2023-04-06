@@ -12,12 +12,14 @@ Obviously a fresh install wasn't an option for this customer as they required al
 After some digging around I managed to locate the VMware KB article that needs to be followed whilst upgrading to ESXi 7.2 [VMware KB Article 84249](https://kb.vmware.com/s/article/84249)
 
 A condensed version of the KB is as follows:  
-1.You need to copy boot.cfg from bootbank to /altbootbank and edit it  
+1.You need to copy boot.cfg from bootbank to /altbootbank and edit it 
+
   *SSH to the ESXi host in question  
   *cp /bootbank/boot.cfg /altbootbank/boot.cfg  
   *vi /altbootbank/boot.cfg  
   *Change the first line 'bootstate=0' > 'bootstate=3'  
   *Change last line 'updated=N' > 'update=N-1' (eg update=3 > updated=2)  
+
 2.Save file  
 3.Reboot and test  
 
