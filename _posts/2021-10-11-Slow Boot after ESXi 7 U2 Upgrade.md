@@ -2,13 +2,13 @@
 layout: post
 title: Slow Boot after ESXi 7 U2 Upgrade
 ---
-Working with a customer which was in the process of migrating away from SD Cards and moving to BOSS devices as VMware are phasing out support for booting from SD Cards and stand alone boot devices as per kb article https://kb.vmware.com/s/article/85685. So whilst migrating to the BOSS devices the customer was also taking the opportunity to upgrade vSphere.
+Working with a customer which was in the process of migrating away from SD Cards and moving to BOSS devices as VMware are phasing out support for booting from SD Cards and stand alone boot devices as per kb article (https://kb.vmware.com/s/article/85685). So whilst migrating to the BOSS devices the customer was also taking the opportunity to upgrade vSphere.
 
 However during this upgrade we encountered a bizarre issue whereby after completing an in place upgrade of a host it would take around an hour to complete the boot process. 
 During testing we discovered if a fresh install of ESXi was completed the hour boot process was not observed.
 Obviously a fresh install wasn't an option for this customer as they required all of the vSwitch and Storage configurations configured (a significant amount of Standard vSwitches) required maintaining in the upgraded version. So a fresh install of ESXi was not an option.
 
-After some digging around I managed to locate the VMware KB article that needs to be followed whilst upgrading to ESXi 7.2 https://kb.vmware.com/s/article/84249
+After some digging around I managed to locate the VMware KB article that needs to be followed whilst upgrading to ESXi 7.2 (https://kb.vmware.com/s/article/84249)
 
 A condensed version of the KB is as follows:
 	• You need to copy boot.cfg from bootbank to /altbootbank and edit it.
