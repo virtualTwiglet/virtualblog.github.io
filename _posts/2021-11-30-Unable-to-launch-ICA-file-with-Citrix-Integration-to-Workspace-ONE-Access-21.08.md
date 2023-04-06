@@ -3,7 +3,7 @@ layout: post
 title: Unable to launch ICA file with Citrix Integration to Workspace ONE Access 21.08
 ---
 I was brought in to assist and troubleshoot for a customer who was experiencing issues whilst integrating Citrix with their Workspace ONE Access environment. When ever they tried to launch a Citrix App via the portal it would fail with the following message.
-img src="{{ site.baseurl }}/images/WS1-ICA-Request.jpg"
+<img src="{{ site.baseurl }}/images/WS1-ICA-Request.jpg">
 
 Investigating the issue from the Workspace ONE Access dashboard reports page under resource usage. I could see that it was failing to launch the ICA file due to communication errors between the Workspace ONE Access Connector and the Citrix StoreFront Server.
 <img src="{{ site.baseurl }}/images/WS1-ICA-Request-Failed.jpg">
