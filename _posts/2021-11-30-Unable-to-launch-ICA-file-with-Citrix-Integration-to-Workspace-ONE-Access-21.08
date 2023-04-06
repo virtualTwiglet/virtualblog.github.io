@@ -20,4 +20,4 @@ Enter the appropriate FQDN in the Trusted Domains field for the installation. It
 <img src="{{ site.baseurl }}/images/WS1-ICA-TrustedDomain-Config.jpg"> <br><br>
 
 Once the customer had completed the above configuration changes to their StoreFront Trusted Domains they were then able to receive and launch the ICA files for the relevant published Virtual Apps. Success and one happy customer. It's always the small things that catch us out.<br><br>
-To save others the hassle of searching for the relevant document that states quite clearly the required for the full FQDN I have included here for reference https://docs.vmware.com/en/VMware-Workspace-ONE-Access/21.08/ws1-access-resources/GUID-66F24F8D-72BE-43EA-A81C-B041AD631E4A.html.
+To save others the hassle of searching for the relevant document that states quite clearly the required for the full FQDN I have included here for reference [https://docs.vmware.com/en/VMware-Workspace-ONE-Access/21.08/ws1-access-resources/GUID-66F24F8D-72BE-43EA-A81C-B041AD631E4A.html].
