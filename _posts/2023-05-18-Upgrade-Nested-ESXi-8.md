@@ -12,7 +12,7 @@ So first off lets put the first host in to maintenance mode
 Now off to the command line. So using Putty connected to my ESXi host.
 First things first needed to allow the host to connect to the internet:
 esxcli network firewall ruleset set -e true -r httpClient
-<img src="{{ site.baseurl }}/images/upgrade-esxi/.enable-http.png">
+<img src="{{ site.baseurl }}/images/upgrade-esxi/enable-http.png">
 
 Next the command to download and install the updated binaries:
 esxcli software profile update -d https://hostupdate.vmware.com/software/VUM/PRODUCTION/main/vmw-depot-index.xml -p ESXi-8.OU1-21495797-standard
