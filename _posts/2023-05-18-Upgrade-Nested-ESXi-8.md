@@ -6,7 +6,7 @@ I have a 3 node nested ESXi 8.0 GA build that I needed to upgrade to the latest 
 
 Not one to give in I kept at it until I found that there was another alternative in using the using the online VMware Depot binaries (Huzza!).
 So first off lets put the first host in to maintenance mode:
-<img src="{{ site.baseurl }}/images/upgrade-esxi/maint-mode.png">
+<img src="{{ site.baseurl }}/images/upgrade-esxi/maint-mode.jpg">
 
 Now off to the command line. So using Putty connected to my ESXi host.
 First things first needed to allow the host to connect to the internet:
