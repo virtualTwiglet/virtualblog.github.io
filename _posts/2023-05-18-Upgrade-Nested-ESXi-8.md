@@ -21,14 +21,14 @@ esxcli network firewall ruleset set -e true -r httpClient
 
 
 Lets check for updates available for vSphere 8:
-esxcli software sources profile list -d https://hostupdate.vmware.com/software/VUM/PRODUCTION/main/vmw-depot-index.xml grep | -i Esxi-8.0  
+esxcli software sources profile list -d https://hostupdate.vmware.com/software/VUM/PRODUCTION/main/vmw-depot-index.xml grep | -i Esxi-8.0 
 Now we know the available updates we can selected the appropriate version and insert in to the following  command line 
 
 
 Next the command to download and install the updated binaries:
 
 
-esxcli software profile update -d https://hostupdate.vmware.com/software/VUM/PRODUCTION/main/vmw-depot-index.xml -p ESXi-8.OU1-21495797-standard
+esxcli software profile update -d https://hostupdate.vmware.com/software/VUM/PRODUCTION/main/vmw-depot-index.xml -p ESXi-8.0U1-21495797-standard
 <img src="{{ site.baseurl }}/images/upgrade-esxi/vmw-depot-cmd.png">
 
 Once the command is run you won't have anything displayed you just have to wait for this to complete. However I still ran into the issue where the hardware (CPU) wasn't support and the update failed (again).
@@ -37,7 +37,7 @@ Once the command is run you won't have anything displayed you just have to wait 
 However the failure did come back with the option to possibly resolve the failure and allow for the host to be upgraded. So lets add that to the command string and try again.
 
 
-esxcli software profile update -d https://hostupdate.vmware.com/software/VUM/PRODUCTION/main/vmw-depot-index.xml -p ESXi-8.OU1-21495797-standard --no-hardware-warning
+esxcli software profile update -d https://hostupdate.vmware.com/software/VUM/PRODUCTION/main/vmw-depot-index.xml -p ESXi-8.0U1-21495797-standard --no-hardware-warning
 <img src="{{ site.baseurl }}/images/upgrade-esxi/vmw-depot-cmd-hardware.png">
 
 Perfect this time the upgrade completed successfully. All we had to do was reboot and confirm the host was upgraded to the latest version.
