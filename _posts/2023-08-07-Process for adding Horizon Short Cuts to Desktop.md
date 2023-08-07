@@ -8,7 +8,7 @@ The first step is to install the Horizon Client to enable the LogonAsCurrentUser
 Create a batch file for installing the Horizon Client for example eucclientinstall.cmd: 
 •VMware-Horizon-Client-2306-8.10.0-21964678.exe /s /v /qn VDM_SERVER=ServerURL VDM_IP_PROTOCOL_USAGE=IPv4 LOGINASCURRENTUSER_DEFAULT=1 ADDLOCAL=All DESKTOP_SHORTCUT=0 AUTO_UPDATE_ENABLED=0 /norestart /L C:\Software\HznClient.log
 
-Step 2: Enable Horizon Client to run Auto-Start at Logon in Windows
+Step 2: Enable Horizon Client to run Auto-Start at Logon in Windows 
 Login to the Windows machine with an administrative account.
 •Click the Windows logo and type “Run” and press enter
 •In the Run command box enter “shell:common startup” press enter
