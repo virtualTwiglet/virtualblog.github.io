@@ -17,8 +17,8 @@ Login to the Windows machine with an administrative account.
 
 <img src="{{ site.baseurl }}/images/horizon-client/run.png">
 
-•This will launch Windows Explorer to the All Users Startup location
-•Copy the Horizon Client shortcut here
+- This will launch Windows Explorer to the All Users Startup location
+- Copy the Horizon Client shortcut here
 
 <img src="{{ site.baseurl }}/images/horizon-client/startup.png">
 
