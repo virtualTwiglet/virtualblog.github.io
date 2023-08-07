@@ -16,45 +16,45 @@ Login to the Windows machine with an administrative account.
 
 <img src="{{ site.baseurl }}/images/horizon-client/run.png">
 
-•	This will launch Windows Explorer to the All Users Startup location
-•	Copy the Horizon Client shortcut here
+•This will launch Windows Explorer to the All Users Startup location 
+•Copy the Horizon Client shortcut here 
 
 
 <img src="{{ site.baseurl }}/images/horizon-client/startup.png">
 
 
-•	Edit the properties of the Horizon Client shortcut
-•	In the Target box add the following to the command line “-serverURL CSAddress -LogonAsCurrentUser True -installShortcutsThenQuit”
+•Edit the properties of the Horizon Client shortcut 
+•In the Target box add the following to the command line “-serverURL CSAddress -LogonAsCurrentUser True -installShortcutsThenQuit” 
 
 <img src="{{ site.baseurl }}/images/horizon-client/client-properties.png">
 
-•	So, the line will for example look like:
-•	“C:\Program Files\VMware\VMware Horizon View Client\vmware-view.exe” -serverURL CSAddress -LoginAsCurrentUser true -installShortcutsThenQuit
-•	To confirm that the Horizon Client is available to Auto-Start
-•	Launch “Settings” and select “Apps” and scroll down to “Startup”
+•So, the line will for example look like:  
+•“C:\Program Files\VMware\VMware Horizon View Client\vmware-view.exe” -serverURL CSAddress -LoginAsCurrentUser true -installShortcutsThenQuit 
+•To confirm that the Horizon Client is available to Auto-Start 
+•Launch “Settings” and select “Apps” and scroll down to “Startup” 
 
 <img src="{{ site.baseurl }}/images/horizon-client/apps-startup.png">
 
-•	Click “Startup” and verify that the Horizon Client displays in the list and is enabled “On”
+•Click “Startup” and verify that the Horizon Client displays in the list and is enabled “On” 
 <img src="{{ site.baseurl }}/images/horizon-client/apps-startup2.png">
 
 Step3: Enable Logon As Current User on the Connection Server
 
-•	Login to the Horizon Admin Console and go to Servers
-•	Select Connection Servers Tab and select Connection Server click Edit
+•Login to the Horizon Admin Console and go to Servers 
+•Select Connection Servers Tab and select Connection Server click Edit 
 
 <img src="{{ site.baseurl }}/images/horizon-client/server-properties.png">
 
-•	Select the Authentication Tab
+•Select the Authentication Tab 
 <img src="{{ site.baseurl }}/images/horizon-client/server-auth.png">
 
-•	Browse down and enable Accept logon as current user
+•Browse down and enable Accept logon as current user 
 <img src="{{ site.baseurl }}/images/horizon-client/server-currentuser.png">
 
-Step4: Test Shortcuts Available
-•	Login to workstation with test user
-•	Required shortcuts are presented to Desktop or Start Menu
+Step4: Test Shortcuts Available 
+•Login to workstation with test user 
+•Required shortcuts are presented to Desktop or Start Menu 
 <img src="{{ site.baseurl }}/images/horizon-client/desktop.png">
 
-Summary
+Summary 
 You should now have a solution whereby when a user logs in to the workstation Horizon Client will take their logon credentials and auto launch in the background and pull down any desktop and start menu items they are entitled to.
