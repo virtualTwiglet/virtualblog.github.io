@@ -7,7 +7,7 @@ published: true
 The first step is to install the Horizon Client to enable the LogonAsCurrentUser feature and to set the Horizon Connection Server details as well as install elements.
 
 Create a batch file for installing the Horizon Client for example eucclientinstall.cmd: 
-- > VMware-Horizon-Client-2306-8.10.0-21964678.exe /s /v /qn VDM_SERVER=ServerURL VDM_IP_PROTOCOL_USAGE=IPv4 LOGINASCURRENTUSER_DEFAULT=1 ADDLOCAL=All DESKTOP_SHORTCUT=0 AUTO_UPDATE_ENABLED=0 /norestart /L C:\Software\HznClient.log
+- VMware-Horizon-Client-2306-8.10.0-21964678.exe /s /v /qn VDM_SERVER=ServerURL VDM_IP_PROTOCOL_USAGE=IPv4 LOGINASCURRENTUSER_DEFAULT=1 ADDLOCAL=All DESKTOP_SHORTCUT=0 AUTO_UPDATE_ENABLED=0 /norestart /L C:\Software\HznClient.log
 
 
 ## Step 2: Enable Horizon Client to run Auto-Start at Logon in Windows 
@@ -27,8 +27,8 @@ Login to the Windows machine with an administrative account.
 
 <img src="{{ site.baseurl }}/images/horizon-client/client-properties.png">
 
-- - So, the line will for example look like:  
-- > “C:\Program Files\VMware\VMware Horizon View Client\vmware-view.exe” -serverURL CSAddress -LoginAsCurrentUser true -installShortcutsThenQuit
+- So, the line will for example look like:  
+- “C:\Program Files\VMware\VMware Horizon View Client\vmware-view.exe” -serverURL CSAddress -LoginAsCurrentUser true -installShortcutsThenQuit
 - To confirm that the Horizon Client is available to Auto-Start
 - Launch “Settings” and select “Apps” and scroll down to “Startup”
 
