@@ -19,6 +19,12 @@ First things first needed to allow the host to connect to the internet:
 esxcli network firewall ruleset set -e true -r httpClient
 <img src="{{ site.baseurl }}/images/upgrade-esxi/enable-http.png">
 
+
+Lets check for updates available for vSphere 8:
+esxcli software sources profile list -d https://hostupdate.vmware.com/software/VUM/PRODUCTION/main/vmw-depot-index.xml gep | -i Esxi-8
+Now we know the available updates we can selected the appropriate version and insert in to the following  command line
+
+
 Next the command to download and install the updated binaries:
 
 
