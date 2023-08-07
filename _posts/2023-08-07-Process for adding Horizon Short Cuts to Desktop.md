@@ -23,7 +23,7 @@ Login to the Windows machine with an administrative account.
 <img src="{{ site.baseurl }}/images/horizon-client/startup.png">
 
 
-•Edit the properties of the Horizon Client shortcut 
+•Edit the properties of the Horizon Client shortcut  
 •In the Target box add the following to the command line “-serverURL CSAddress -LogonAsCurrentUser True -installShortcutsThenQuit” 
 
 <img src="{{ site.baseurl }}/images/horizon-client/client-properties.png">
@@ -51,10 +51,10 @@ Step3: Enable Logon As Current User on the Connection Server
 •Browse down and enable Accept logon as current user 
 <img src="{{ site.baseurl }}/images/horizon-client/server-currentuser.png">
 
-Step4: Test Shortcuts Available 
-•Login to workstation with test user 
-•Required shortcuts are presented to Desktop or Start Menu 
+Step4: Test Shortcuts Available  
+•Login to workstation with test user  
+•Required shortcuts are presented to Desktop or Start Menu  
 <img src="{{ site.baseurl }}/images/horizon-client/desktop.png">
 
-Summary 
+Summary  
 You should now have a solution whereby when a user logs in to the workstation Horizon Client will take their logon credentials and auto launch in the background and pull down any desktop and start menu items they are entitled to.
