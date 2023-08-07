@@ -21,7 +21,7 @@ esxcli network firewall ruleset set -e true -r httpClient
 
 
 Lets check for updates available for vSphere 8:
-esxcli software sources profile list -d https://hostupdate.vmware.com/software/VUM/PRODUCTION/main/vmw-depot-index.xml grep | -i Esxi-8.0 
+esxcli software sources profile list -d https://hostupdate.vmware.com/software/VUM/PRODUCTION/main/vmw-depot-index.xml grep | -i Esxi-8.0   
 Now we know the available updates we can selected the appropriate version and insert in to the following  command line 
 
 
